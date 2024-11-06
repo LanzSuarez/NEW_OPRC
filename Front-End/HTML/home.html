@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Instrument+Sans&display=swap" rel="stylesheet">
+  <link href="/Front-End/CSS/home.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- Header with Logo, Search Bar, and Navigation Links -->
+    <header class="main-header">
+      <img src="/Front-End/Img/Logo.png" alt="Logo" class="logo">
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <nav class="header-nav">
+        <a href="#">Home</a>
+        <a href="/Front-End/HTML/about_us.html">About Us</a>
+      </nav>
+    </header>
+
+    <div class="dashboard-body">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h2>||| MAIN MENU</h2>
+        <nav>
+          <ul>
+            <li><a href="/Front-End/HTML/dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard Overview</a></li>
+            <li><a href="/Front-End/HTML/E_S_M.html"><i class="fas fa-shield-alt"></i> Enhanced Security Measure</a></li>
+            <li><a href="/Front-End/HTML/Auto Entry-Exit.html"><i class="fas fa-car"></i> Automated Vehicle Entry/Exit Management</a></li>
+            <li><a href="/Front-End/HTML/settings.html"><i class="fas fa-cogs"></i> Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="dashboard-overview">
+          <div class="profile-welcome">
+            <div class="welcome-left">
+              <i class="fas fa-user-circle"></i>
+              <p>Welcome Back! <strong>John Doe</strong></p>
+            </div>
+            <div class="welcome-right">
+              <img src="https://media.istockphoto.com/id/1083622428/vector/car-parking-icon.jpg?s=612x612&w=0&k=20&c=Z6VydNYDHrBq6gujhSuC6eIaCXQn_eMHNBFf8Co0ul4=" alt="Profile Image"> <!--image on right side-->
+            </div>
+          </div>
+
+          <div class="parking-overview">
+            <!-- First Row: Image Previews -->
+            <div class="row">
+              <div class="col">
+                <img src=/Front-End/Img/Park_img.png alt="Parking A" class="parking-image">
+              </div>
+              <div class="col">
+                <img src="/Front-End/Img/Park_img.png" alt="Parking B" class="parking-image">
+              </div>
+              <div class="col">
+                <img src="/Front-End/Img/Park_img.png" alt="Parking C" class="parking-image">
+              </div>
+            </div>
+
+            <!-- Second Row: Buttons (PARKING A, B, C) -->
+            <div class="row">
+              <div class="col">
+                <button class="btn">PARKING A</button>
+              </div>
+              <div class="col">
+                <button class="btn">PARKING B</button>
+              </div>
+              <div class="col">
+                <button class="btn">PARKING C</button>
+              </div>
+            </div>
+
+            <!-- Third Row: Text (Availability) -->
+            <div class="row">
+              <div class="col">
+                <p>Inside: 15</p>
+                <p>Availability: 12</p>
+              </div>
+              <div class="col">
+                <p>Inside: 10</p>
+                <p>Availability: 5</p>
+              </div>
+              <div class="col">
+                <p>Inside: 8</p>
+                <p>Availability: 3</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

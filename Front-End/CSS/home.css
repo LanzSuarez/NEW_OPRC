@@ -1,0 +1,215 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Instrument Sans', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    overflow: hidden;  /* Prevent scrollbars */
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Fill the entire height of the viewport */
+    width: 100%;  /* Fill the entire width of the viewport */
+    background: #ffffff;
+    border-radius: 30px;
+    overflow: hidden; /* Hide any overflow */
+  }
+  
+  /* Header Styling */
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #6a071a;
+    color: white;
+    position: relative;
+    height: 100px; /* Fixed height for the header */
+    width: 100%;
+  }
+  
+  .main-header .logo {
+    width: 20%;
+  }
+  
+  .main-header .search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .main-header .search-bar input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  
+  .header-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 23%;
+    background-color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+    height: calc(100vh - 80px); /* Full height minus header height */
+    border-radius: 20px 0 0 20px;
+    overflow-y: auto; /* Enable scroll within sidebar if content overflows */
+  }
+  
+  .sidebar h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #333;
+    background-color: #ffbb00;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #d9d9d9;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .sidebar nav ul li a i {
+    margin-right: 10px;
+    font-size: 50px;
+  }
+  
+  /* Main Content Styling */
+  .dashboard-body {
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
+  
+  .main-content {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 0 20px 20px 0;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  }
+  
+  /* Dashboard Overview */
+  .dashboard-overview {
+    background-color: #ffbb00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile Section */
+  .profile-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .profile-welcome .welcome-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-welcome .welcome-left i {
+    font-size: 60px;
+    margin-right: 15px;
+  }
+  
+  .profile-welcome .welcome-left p{
+    font-size: 25px;
+  }
+  
+  .profile-welcome .welcome-right img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+  }
+  
+  /* Parking Overview */
+  .parking-overview .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .parking-overview .col {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* First Row: Image Previews */
+  .parking-overview .parking-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Second Row: Buttons */
+  .parking-overview .btn {
+    background-color: #6a071a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .parking-overview .btn:hover {
+    background-color: rgba(237,67,255,0.49);
+  }
+  
+  /* Third Row: Text */
+  .parking-overview .col p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
